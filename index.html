@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan PJJ Kelas 9B</title>
+    <style>
+        :root {
+            --bg-color: #fceade;
+            --clay-bg: #fff5ee;
+            --clay-border: #f0d4c9;
+            --shadow-light: #ffffff;
+            --shadow-dark: #d8b4a6;
+            --text-color: #5c4033;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-color);
+        }
+
+        /* Header dengan Logo */
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .school-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: drop-shadow(2px 2px 5px var(--shadow-dark));
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0px var(--shadow-light);
+        }
+
+        /* Container Kolase dengan Efek 3D Clay Besar */
+        .clay-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            max-width: 1300px;
+            background: var(--clay-bg);
+            padding: 30px;
+            border-radius: 35px;
+            box-shadow: 
+                15px 15px 35px var(--shadow-dark), 
+                -15px -15px 35px var(--shadow-light),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.6),
+                inset -5px -5px 10px rgba(0, 0, 0, 0.05);
+            border: 4px solid var(--clay-border);
+        }
+
+        /* Kotak Item Foto ala Clay */
+        .clay-card {
+            aspect-ratio: 1 / 1;
+            background-color: #f7e1d7;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            border: 3px solid #ffffff;
+            /* Efek Clay 3D menonjol keluar */
+            box-shadow: 
+                6px 6px 12px var(--shadow-dark), 
+                -6px -6px 12px var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* Efek Interaktif Saat Disentuh/Hover */
+        .clay-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 
+                10px 10px 20px var(--shadow-dark), 
+                -10px -10px 20px var(--shadow-light);
+            z-index: 10;
+        }
+
+        /* Gambar di dalam Kartu */
+        .clay-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .clay-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Responsif untuk Layar Tablet & Mobile */
+        @media (max-width: 1024px) {
+            .clay-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .clay-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <!-- Logo SMPN 162 -->
+        <img src="./image/onsit.jpeg" alt="Logo SMPN 162" class="school-logo">
+        <h1>PRESENSI PJJ KELAS 9B</h1>
+    </div>
+
+    <div class="clay-container">
+        <!-- 36 Kartu Foto -->
+        <div class="clay-card"><img src="./image/rajib.jpeg" alt="Foto 1"></div>
+        <div class="clay-card"><img src="./image/bastian.jpeg" alt="Foto 2"></div>
+        <div class="clay-card"><img src="./image/ridho.jpeg" alt="Foto 3"></div>
+        <div class="clay-card"><img src="./image/vania.jpeg" alt="Foto 4"></div>
+        <div class="clay-card"><img src="./image/ricky.jpeg" alt="Foto 5"></div>
+        <div class="clay-card"><img src="./image/ira.jpeg" alt="Foto 6"></div>
+
+        <div class="clay-card"><img src="./image/rizky.jpeg" alt="Foto 7"></div>
+        <div class="clay-card"><img src="./image/candra.jpeg" alt="Foto 8"></div>
+        <div class="clay-card"><img src="./image/adellia.jpeg" alt="Foto 9"></div>
+        <div class="clay-card"><img src="./image/nadila.jpeg" alt="Foto 10"></div>
+        <div class="clay-card"><img src="./image/fahri.jpeg" alt="Foto 11"></div>
+        <div class="clay-card"><img src="./image/ahdan.jpeg" alt="Foto 12"></div>
+
+        <div class="clay-card"><img src="./image/fatimah.jpeg" alt="Foto 13"></div>
+        <div class="clay-card"><img src="./image/najwa.jpeg" alt="Foto 14"></div>
+        <div class="clay-card"><img src="./image/nazwir.jpeg" alt="Foto 15"></div>
+        <div class="clay-card"><img src="./image/itah.jpeg" alt="Foto 16"></div>
+        <div class="clay-card"><img src="./image/fiola.jpeg" alt="Foto 17"></div>
+        <div class="clay-card"><img src="./image/ribka.jpeg" alt="Foto 18"></div>
+
+        <div class="clay-card"><img src="./image/wanfahri.jpeg" alt="Foto 19"></div>
+        <div class="clay-card"><img src="./image/clarisa.jpeg" alt="Foto 20"></div>
+        <div class="clay-card"><img src="./image/aulia.jpeg" alt="Foto 21"></div>
+        <div class="clay-card"><img src="./image/fatih.jpeg" alt="Foto 22"></div>
+        <div class="clay-card"><img src="./image/ikey.jpeg" alt="Foto 23"></div>
+        <div class="clay-card"><img src="./image/hafidz.jpeg" alt="Foto 24"></div>
+
+        <div class="clay-card"><img src="./image/asifa.jpeg" alt="Foto 25"></div>
+        <div class="clay-card"><img src="./image/haura.jpeg" alt="Foto 26"></div>
+        <div class="clay-card"><img src="./image/amzad.jpeg" alt="Foto 27"></div>
+        <div class="clay-card"><img src="./image/adi.jpeg" alt="Foto 28"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=29" alt="Foto 29"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=30" alt="Foto 30"></div>
+
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=31" alt="Foto 31"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=32" alt="Foto 32"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=33" alt="Foto 33"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=34" alt="Foto 34"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=35" alt="Foto 35"></div>
+        <div class="clay-card"><img src="https://picsum.photos/300/300?random=36" alt="Foto 36"></div>
+    </div>
+
+</body>
+</html>
